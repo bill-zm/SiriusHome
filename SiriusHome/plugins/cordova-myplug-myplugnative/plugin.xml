@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--id: 插件的标识，即发布到 plugins.cordova.io 的 ID,生成的插件文件夹名也与此相同-->
+<plugin id="cordova-myplug-myplugnative" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--name：插件的名称-->
+    <name>myPlugNative</name>
+    <!--description：描述信息-->
+    <description>Description</description>
+    <!--js-module：对应我们的 javascript 文件，src 属性指向 www/ExtraInfo.js-->
+    <js-module name="myPlugNative" src="www/myPlugNative.js">
+        <!--target:在js里调用该插件时用的插件名-->
+        <clobbers target="navigator.myPlugNative"/>
+    </js-module>
+    <!--platform：支持的平台，这里仅仅用到了 android-->
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="myPlugNative">
+                <param name="android-package" value="com.yuekong.sirius.home.plugin.myPlugNative" />
+            </feature>
+        </config-file>
+        <source-file src="src/com/yuekong/sirius/home/plugin/myPlugNative.java" target-dir="src/com/yuekong/sirius/home/plugin"/>
+        
+        <!--需要引入jar包时添加此处代码-->
+<!--        <source-file src="src/android/jpush-sdk-release1.7.5.jar" target-dir="libs"/>-->
+        <!--需要网络引入jar包时添加此处代码-->
+<!--        <framework src="com.android.support:support-v4:23.1.1" />-->
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="myPlugNative">
+            <param name="ios-package" value="MyPlugin" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/MyPlugin.h"/>
+        <source-file src="src/ios/MyPlugin.m"/>
+        <!--//如果要依赖系统库-->
+        <!--<framework src="src/ios/libs/AddressBook.framework" />-->
+        <!--//如果需要其他三方的framework,先将这些三方的库复制到src/ios     目录下，比如我们在这下里面新建一个Test文件夹，整体放三方的     framework,那关联格式：-->
+        <!--<framework src="src/ios/Test/UTDID.framework" custom="true" />-->
+        <!--//如果需要将捆绑包bundle或者是图片之类的文件-->
+        <!--<resource-file src="src/ios/Test/WXOpenIMSDKResource.bundle" />-->
+        <!--<resource-file src="src/ios/Test/yw_1222.jpg" />-->
+    </platform>
+
+</plugin>
+<!--<config-file parent="/*" target="res/xml/config.xml">-->
+<!--    <feature name="myPlugNative">-->
+<!--        <param name="android-package" value="com.yuekong.sirius.home.plugin.myPlugNative"/>-->
+<!--    </feature>-->
+<!--</config-file>-->
+<!--如果需要设置权限还要加上这个-->
+<!--<config-file target="AndroidManifest.xml" parent="/*">-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--</config-file>-->
+<!--<source-file src="src/com/yuekong/sirius/home/plugin/myPlugNative.java" target-dir="src/com/yuekong/sirius/home/plugin"/>-->

@@ -1,0 +1,62 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cn.zxj.cordova.UmengAnalyticsPlugin": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "com.qdc.plugins.baidu.location": {
+            "API_KEY": "yHEu4jZVW6NulpQ4dR1Cs5Gs14ZzcDWE",
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-hot-code-push-plugin": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-myplug-myplugnative": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-themeablebrowser": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        },
+        "jpush-phonegap-plugin": {
+            "API_KEY": "e862a00badccc2480a6d52e5",
+            "PACKAGE_NAME": "com.yuekong.sirius.home"
+        }
+    },
+    "dependent_plugins": {}
+}
